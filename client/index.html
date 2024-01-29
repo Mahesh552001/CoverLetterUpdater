@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cover Letter Updater</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <script src="./main.js"></script>
+    <script src="https://static.zohocdn.com/catalyst/sdk/js/4.0.0/catalystWebSDK.js"></script>
+    <script src="/__catalyst/sdk/init.js"></script>
+  </head>
+  <body onload="showProfile()">
+    <h2 style="text-align: center">Cover Letter Updater</h2>
+    <div class="card">
+      <p class="title" id="content"></p>
+      <div>
+        <div id="uploadContent">
+          <p>
+            This is your first time to this application. Please start by
+            uploading your cover letter.
+          </p>
+          <label for="fileInput">Upload Cover Letter:</label>
+          <input
+            type="file"
+            id="uploadFileInput"
+            onchange="handleFileSelect()"
+          />
+          <button
+            class="uploadButton"
+            id="uploadButton"
+            style="width: 100px; display: none"
+            onclick="uploadFile()"
+          >
+            Upload
+          </button>
+        </div>
+        <div id="updateContent">
+          <p>
+            We have your cover letter, If you wish to update it please use the
+            below option to do so!.
+          </p>
+          <label for="fileInput" style="font-size: 15px"
+            >Update Cover Letter:</label
+          >
+          <input
+            type="file"
+            id="updateFileInput"
+            onchange="handleFileSelect()"
+          />
+          <button
+            class="updateButton"
+            id="updateButton"
+            style="width: 100px; display: none"
+            onclick="updateFile()"
+          >
+            Update
+          </button>
+        </div>
+        <div id="coverLetterInputForm">
+          <h3 style="margin-bottom: 5px">Cover Letter Information:</h3>
+          <form id="coverLetterForm">
+            <table>
+              <tr>
+                <td><label for="roleName">Role Name:</label></td>
+                <td>
+                  <input type="text" id="roleName" name="roleName" required />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="companyName">Company Name:</label></td>
+                <td>
+                  <input
+                    type="text"
+                    id="companyName"
+                    name="companyName"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="companyLocation">Company Location:</label></td>
+                <td>
+                  <input
+                    type="text"
+                    id="companyLocation"
+                    name="companyLocation"
+                    required
+                  />
+                </td>
+              </tr>
+            </table>
+            <br />
+            <button type="button" onclick="submitCoverLetter()">
+              Generate
+            </button>
+          </form>
+        </div>
+        <br />
+      </div>
+      <p><button onclick="logout()">Logout</button></p>
+    </div>
+  </body>
+</html>

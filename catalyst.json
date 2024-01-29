@@ -1,0 +1,12 @@
+{
+  "functions": {
+    "targets": [
+      "coverletterupdater"
+    ],
+    "ignore": [],
+    "source": "functions"
+  },
+  "client": {
+    "source": "client"
+  }
+}

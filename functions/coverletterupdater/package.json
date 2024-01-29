@@ -1,0 +1,14 @@
+{
+	"name": "coverletterupdater",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "552001mahesh@gmail.com",
+	"dependencies": {
+		"docxtemplater": "^3.44.0",
+		"express": "^4.18.2",
+		"express-fileupload": "^1.4.3",
+		"pizzip": "^3.1.6",
+		"stream": "^0.0.2",
+		"zcatalyst-sdk-node": "latest"
+	}
+}

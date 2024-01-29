@@ -1,0 +1,30 @@
+{
+  "defaults": {
+    "project": 1,
+    "env": 1
+  },
+  "actives": {
+    "project": 1,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "3171000000055001",
+      "name": "coverletterupdater",
+      "domain": {
+        "id": "10072042314",
+        "name": "coverletterupdater-805048481.development"
+      },
+      "timezone": "America/Chicago",
+      "env": [
+        {
+          "idx": 1,
+          "id": "805048481",
+          "name": "Development",
+          "type": 3
+        }
+      ]
+    }
+  ]
+}

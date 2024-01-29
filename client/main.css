@@ -1,0 +1,49 @@
+.card {
+  margin: auto;
+  padding: 0 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #a5a4a4;
+}
+.title {
+  font-size: 23px;
+  color: black;
+}
+button {
+  max-width: 100px;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 50%;
+  font-size: 15px;
+  border-radius: 8px;
+}
+
+/* .uploadButton,
+.updateButton {
+  border: 1px solid;
+  color: black;
+  background-color: inherit;
+} */
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+button:hover,
+a:hover {
+  opacity: 0.7;
+}
+body {
+  background-color: #a5a4a4;
+  visibility: hidden;
+}
+p {
+  font-size: 15px;
+}
