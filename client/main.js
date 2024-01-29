@@ -70,6 +70,7 @@ async function uploadFile() {
       throw new Error("File upload failed");
     }
     location.reload();
+    alert("File uploaded successfully!");
   } catch (error) {
     alert("Sorry! Currently can't able to upload file.");
     console.error("File upload error:", error);
@@ -101,6 +102,7 @@ async function updateFile() {
     if (!response.ok) {
       throw new Error("File update failed");
     }
+    alert("File updated successfully!");
   } catch (error) {
     alert("Sorry! Currently can't able to update file.");
     console.error("File update error:", error);
